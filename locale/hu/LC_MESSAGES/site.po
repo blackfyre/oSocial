@@ -1,0 +1,164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: oSocial 0.1 ALPHA\n"
+"POT-Creation-Date: 2013-01-17 20:59+0100\n"
+"PO-Revision-Date: 2013-01-17 20:59+0100\n"
+"Last-Translator: Galicz Miklós <galicz.miklos@blackworks.org>\n"
+"Language-Team:  <galiczmiklos@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ../../..\n"
+
+#: ../../../core/class.adminPanel.php:71
+msgid "NO_REGISTRANTS_TO_PROCESS"
+msgstr "Nincs feldolgozandó regisztráció!"
+
+#: ../../../core/class.adminPanel.php:82
+#: ../../../core/class.adminPanel.php:101
+msgid "ADMIN_H_EMAIL"
+msgstr "email"
+
+#: ../../../core/class.adminPanel.php:85
+#: ../../../core/class.adminPanel.php:104
+msgid "ADMIN_H_FIRSTNAME"
+msgstr "Keresztnév"
+
+#: ../../../core/class.adminPanel.php:88
+#: ../../../core/class.adminPanel.php:107
+msgid "ADMIN_H_LASTNAME"
+msgstr "Vezetéknév"
+
+#: ../../../core/class.adminPanel.php:91
+#: ../../../core/class.adminPanel.php:110
+msgid "ADMIN_H_REGDATE"
+msgstr "Regisztrált"
+
+#: ../../../core/class.adminPanel.php:94
+#: ../../../core/class.adminPanel.php:113
+msgid "ADMIN_H_ACTION"
+msgstr "Cselekvés"
+
+#: ../../../core/class.adminPanel.php:135
+msgid "ADMIN_ACTIVATE_USER"
+msgstr "Aktiválás"
+
+#: ../../../core/class.adminPanel.php:139
+msgid "ADMIN_BAN_USER"
+msgstr "TILTÁS"
+
+#: ../../../core/class.auth.php:129
+msgid "PLACEHOLDER_USERNAME"
+msgstr "Felhasználónév"
+
+#: ../../../core/class.auth.php:130 ../../../core/class.auth.php:144
+#: ../../../core/class.auth.php:145
+msgid "PLACEHOLDER_PASSWORD"
+msgstr "Jelszó"
+
+#: ../../../core/class.auth.php:133
+msgid "FORM_LOGIN_HEADER"
+msgstr "Bejelentkezés"
+
+#: ../../../core/class.auth.php:141
+msgid "PLACEHOLDER_FIRSTNAME"
+msgstr "Keresztnév"
+
+#: ../../../core/class.auth.php:142
+msgid "PLACEHOLDER_LASTNAME"
+msgstr "Vezetéknév"
+
+#: ../../../core/class.auth.php:143 ../../../core/control.overseer.php:126
+msgid "PLACEHOLDER_EMAIL"
+msgstr "te@tartomany.hu"
+
+#: ../../../core/class.auth.php:146
+msgid "PLACEHOLDER_SELECT_GENDER"
+msgstr "Válassz nemet"
+
+#: ../../../core/class.auth.php:147
+msgid "PLACEHOLDER_DATE_OF_BIRTH"
+msgstr "Születésnap"
+
+#: ../../../core/class.auth.php:150
+msgid "FORM_REGISTER_HEADER"
+msgstr "Regisztráció"
+
+#: ../../../core/class.auth.php:261
+msgid "ERROR_PASSWORDS_DONT_MATCH"
+msgstr "A megadott jelszavak nem egyeznek!"
+
+#: ../../../core/class.auth.php:265
+msgid "ERROR_INVALID_DATA"
+msgstr "Érvénytelen a megadott adat!"
+
+#: ../../../core/class.errorHandler.php:70
+msgid "ERROR_QUERY_FAILED"
+msgstr "Sikertelen lekérdezés"
+
+#: ../../../core/class.errorHandler.php:91
+msgid "ERROR_REQUIRED_IS_NULL"
+msgstr "A szükséges változó NULL értékű"
+
+#: ../../../core/class.errorHandler.php:102
+msgid "ERROR_REQUIRED_NOT_ARRAY"
+msgstr "A szükséges változó nem tömb"
+
+#: ../../../core/class.errorHandler.php:113
+msgid "ERROR_NOT_EXPECTED_VAR_TYPE"
+msgstr "Nem egészen erre a változóra lenne szükség..."
+
+#: ../../../core/class.errorHandler.php:124
+msgid "ERROR_MULTIPLE_QUERY_RESULTS"
+msgstr "Kicsit több az eredmény a vártnál..."
+
+#: ../../../core/class.errorHandler.php:136
+msgid "ERROR"
+msgstr "HIBA"
+
+#: ../../../core/class.errorHandler.php:149
+msgid "SUCCESS"
+msgstr "SIKER"
+
+#: ../../../core/class.form.php:113
+msgid "BUTTON_SUBMIT"
+msgstr "Küldés"
+
+#: ../../../core/control.overseer.php:120
+msgid "oSocial"
+msgstr "oSocial"
+
+#: ../../../core/control.overseer.php:121
+msgid "FALLBACK_META_DESC"
+msgstr "Alapértelmezett meta leírás"
+
+#: ../../../core/control.overseer.php:122
+msgid "FALLBACK_META_TAGS"
+msgstr "Alapértelmezett meta tagek"
+
+#: ../../../core/control.overseer.php:124
+msgid "QUICKSEARCH"
+msgstr "GYORSKERESÉS"
+
+#: ../../../core/control.overseer.php:125
+msgid "TITLE_PLACE_FOR_ADS"
+msgstr "Reklám helye"
+
+#: ../../../core/control.overseer.php:127
+msgid "TITLE_USER_MENU"
+msgstr "Felhasználói menü"
+
+#~ msgid "TITLE_WHATS_NEW"
+#~ msgstr "Újdonságok"
+
+#~ msgid "NEWSLETTER_SIGNUP"
+#~ msgstr "Hírlevél"
+
+#~ msgid "NEWSLETTER_SIGNUP_LEGAL"
+#~ msgstr "Néhány következmény a feliratkozásról"
+
+#~ msgid "SIGNUP_BUTTON"
+#~ msgstr "Feliratkozás"

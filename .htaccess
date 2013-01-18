@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^setlang/([^/]*)$ /index.php?setlang=$1 [L]
+RewriteRule ^([^/]*)\.html$ /index.php?mode=$1 [L]
+RewriteRule ^([^/]*)/([^/]*)\.html$ /index.php?mode=$1&var1=$2 [L]
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)\.html$ /index.php?mode=$1&var1=$2&var2=$3 [L]
