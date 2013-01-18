@@ -4,7 +4,7 @@
  * Date: 2013.01.18.
  * Time: 10:56
  *
- * @package oSocila
+ * @package    oSocial
  * @subpackage homeStreamer
  */
 class homeStream
