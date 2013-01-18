@@ -7,7 +7,11 @@
  *
  * Date: 2013.01.15.
  * Time: 20:15
+ *
+ * Futtatáskor véletlen szerűen hoz létre kapcsolatot az adatbázisban lévő felhasználók között
  */
+
+$kapcsolatokSzama = 12000;
 
 /**
  * AUTOLOADER
@@ -40,7 +44,7 @@ if ($countResult = $db->query($countUsers)) {
     $userCount = $countResult->fetch();
     $userCount = $userCount['userCount'];
 
-    for ($i = 1; $i <= 12000; $i++) {
+    for ($i = 1; $i <= $kapcsolatokSzama; $i++) {
 
         $date1 = mt_rand($minDate, $maxDate);
         $date2 = mt_rand($date1, $maxDate);

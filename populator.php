@@ -7,7 +7,13 @@
  *
  * Date: 2013.01.14.
  * Time: 22:46
+ *
+ * Egy megadott CSV fájl alapján feltölti az adatbázis felhasználókkal
+ *
+ * @deprecated
  */
+
+$csvPath = "_populator/simplified.csv";
 
 /**
  * AUTOLOADER
@@ -24,7 +30,7 @@ $passForAllUsers = md5('salt' . sha1('salt' . 'nincsJelszo' . 'salt') . 'salt');
 ini_set("default_charset", "utf-8");
 
 // CSV beolvasása
-if (($handle = fopen("_populator/simplified.csv", "r")) !== FALSE) {
+if (($handle = fopen($csvPath, "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 0, ";")) !== FALSE) {
 
         // meghatározott adatok beszerzése

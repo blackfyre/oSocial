@@ -3,6 +3,10 @@
  * User: galiczmiklos
  * Date: 2013.01.17.
  * Time: 14:51
+ *
+ * Ideiglenes kijelentkezés fájl
+ *
+ * @deprecated
  */
 
 session_start();
