@@ -7,6 +7,9 @@
  *
  * Date: 2013.01.17.
  * Time: 18:52
+ *
+ * @package oSocial
+ * @subpacakage activityLog
  */
 class activityLog
 {
@@ -16,19 +19,14 @@ class activityLog
 
     function __construct()
     {
-        if (is_null($this->db)) {
-            $dbi = database::getInstance();
-            $this->db = $dbi->getConnection();
-        }
 
-        if (is_null($this->core)) {
-            $this->core = new coreFunctions();
-        }
+        $dbi = database::getInstance();
+        $this->db = $dbi->getConnection();
 
-        if (is_null($this->var)) {
-            $this->var = new varGetter();
-        }
+        $this->core = new coreFunctions();
+        $this->var = new varGetter();
     }
+
 
     /**
      * Naplózza az aktuális felhasználó bejelentkezését

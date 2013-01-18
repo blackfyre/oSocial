@@ -3,6 +3,9 @@
  * User: galiczmiklos
  * Date: 2013.01.04.
  * Time: 12:14
+ *
+ * @package oSocial
+ * @subpacakage coreFunctions
  */
 
 /**

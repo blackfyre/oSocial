@@ -13,6 +13,7 @@ class homeStream
     private $core = null;
     private $error = null;
     private $var = null;
+    private $messenger = null;
 
     function __construct()
     {
@@ -23,6 +24,7 @@ class homeStream
         $this->core = new coreFunctions();
         $this->error = new errorHandler();
         $this->var = new varGetter();
+        $this->messenger = new messenger();
 
     }
 
@@ -50,6 +52,50 @@ class homeStream
 
     }
 
+    function  getGlobalMessages()
+    {
+        $query = "SELECT *, (SELECT CONCAT(firstName, ' ', lastName) FROM user_details WHERE user_details.uid=messages.sender) AS name FROM messages WHERE recipient='-1' ORDER BY sentOn DESC";
+
+        if ($result = $this->db->query($query)) {
+
+            $data = null;
+
+            while ($row = $result->fetch()) {
+                $data[] = $row;
+            }
+
+            return $this->messenger->renderTable($data);
+
+        } else {
+            $this->error->queryError();
+            return false;
+        }
+    }
+
+    /**
+     * @return bool|string
+     */
+    private function getNewMessages()
+    {
+        $uid = $this->var->getUserID();
+        $query = "SELECT * FROM messages WHERE recipient='$uid' AND sentOn>=(SELECT eventOn FROM _log WHERE _log.uid=messages.recipient ORDER BY eventOn DESC LIMIT 1)";
+
+        if ($result = $this->db->query($query)) {
+
+            $count = $result->rowCount();
+
+            $msg = gettext('YOU_HAVE_%C%_NEW_MESSAGES');
+            $msg = str_replace('%C%', '<strong>' . $count . '</strong>', $msg);
+
+            return '<p>' . $msg . '</p>';
+
+        } else {
+            $this->error->queryError();
+            return false;
+        }
+
+    }
+
     function renderWaitingMessage()
     {
 
@@ -63,6 +109,7 @@ class homeStream
             $r .= '</p>';
         }
 
+        $r .= $this->getNewMessages();
         return $r;
 
     }

@@ -7,6 +7,9 @@
  *
  * Date: 2013.01.17.
  * Time: 23:24
+ *
+ * @package oSocial
+ * @subpackage socialConnector
  */
 class socialConnector
 {
@@ -37,6 +40,11 @@ class socialConnector
         }
     }
 
+    /**
+     * @param null $target
+     * @param int $type
+     * @return bool
+     */
     function setRelationTo($target = null, $type = 0)
     {
         if (is_numeric($target) AND is_numeric($type)) {
@@ -68,53 +76,6 @@ class socialConnector
                 $this->error->queryError();
                 return false;
             }
-
-            /*
-
-            // nézzük, hogy van -e már kapcsolat
-            $checkConnection = "SELECT * FROM user_connection WHERE init='$uid' AND target='$target'";
-
-            if ($checkResult = $this->db->query($checkConnection)) {
-
-                //ha van ebből az irányból
-                if ($checkResult->rowCount() != 0) {
-
-
-                } else {
-                    // nincs nézzük meg a másik oldalról
-                    $tryAgain = "SELECT * FROM user_connection WHERE target='$uid' AND init='$target'";
-
-                    if ($checkResult2 = $this->db->query($tryAgain)) {
-
-                        //ha van a másik oldlról
-                        if ($checkResult2->rowCount() != 0) {
-
-                        } else {
-                            //ha egyik oldalról sincs
-
-                        }
-
-                    } else {
-                        $this->error->queryError();
-                        return false;
-                    }
-
-
-                }
-
-                if ($this->db->query($query)) {
-                    return true;
-                } else {
-                    return false;
-                }
-
-            } else {
-                $this->error->queryError();
-                return false;
-            }
-
-            */
-
 
         } else {
             $this->error->isNotRequiredVariableType();

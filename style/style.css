@@ -290,3 +290,9 @@ nav h3 {
 .connectionTable td {
     vertical-align: middle;
 }
+
+/* messages */
+
+.messageTable {
+    font-size: 10px;
+}

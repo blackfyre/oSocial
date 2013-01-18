@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: oSocial 0.1 ALPHA\n"
-"POT-Creation-Date: 2013-01-17 20:59+0100\n"
-"PO-Revision-Date: 2013-01-17 20:59+0100\n"
+"POT-Creation-Date: 2013-01-18 15:30+0100\n"
+"PO-Revision-Date: 2013-01-18 15:32+0100\n"
 "Last-Translator: Galicz Miklós <galicz.miklos@blackworks.org>\n"
 "Language-Team:  <galiczmiklos@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -13,141 +13,222 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ../../..\n"
 
-#: ../../../core/class.adminPanel.php:71
+#: ../../../core/class.adminPanel.php:69
 msgid "NO_REGISTRANTS_TO_PROCESS"
 msgstr "Nincs feldolgozandó regisztráció!"
 
-#: ../../../core/class.adminPanel.php:82
-#: ../../../core/class.adminPanel.php:101
+#: ../../../core/class.adminPanel.php:80 ../../../core/class.adminPanel.php:99
 msgid "ADMIN_H_EMAIL"
 msgstr "email"
 
-#: ../../../core/class.adminPanel.php:85
-#: ../../../core/class.adminPanel.php:104
+#: ../../../core/class.adminPanel.php:83
+#: ../../../core/class.adminPanel.php:102
 msgid "ADMIN_H_FIRSTNAME"
 msgstr "Keresztnév"
 
-#: ../../../core/class.adminPanel.php:88
-#: ../../../core/class.adminPanel.php:107
+#: ../../../core/class.adminPanel.php:86
+#: ../../../core/class.adminPanel.php:105
 msgid "ADMIN_H_LASTNAME"
 msgstr "Vezetéknév"
 
-#: ../../../core/class.adminPanel.php:91
-#: ../../../core/class.adminPanel.php:110
+#: ../../../core/class.adminPanel.php:89
+#: ../../../core/class.adminPanel.php:108
 msgid "ADMIN_H_REGDATE"
 msgstr "Regisztrált"
 
-#: ../../../core/class.adminPanel.php:94
-#: ../../../core/class.adminPanel.php:113
+#: ../../../core/class.adminPanel.php:92
+#: ../../../core/class.adminPanel.php:111
 msgid "ADMIN_H_ACTION"
 msgstr "Cselekvés"
 
-#: ../../../core/class.adminPanel.php:135
+#: ../../../core/class.adminPanel.php:133
 msgid "ADMIN_ACTIVATE_USER"
 msgstr "Aktiválás"
 
-#: ../../../core/class.adminPanel.php:139
+#: ../../../core/class.adminPanel.php:137
 msgid "ADMIN_BAN_USER"
 msgstr "TILTÁS"
 
-#: ../../../core/class.auth.php:129
+#: ../../../core/class.auth.php:115
 msgid "PLACEHOLDER_USERNAME"
 msgstr "Felhasználónév"
 
-#: ../../../core/class.auth.php:130 ../../../core/class.auth.php:144
-#: ../../../core/class.auth.php:145
+#: ../../../core/class.auth.php:116 ../../../core/class.auth.php:131
+#: ../../../core/class.auth.php:132
 msgid "PLACEHOLDER_PASSWORD"
 msgstr "Jelszó"
 
-#: ../../../core/class.auth.php:133
+#: ../../../core/class.auth.php:119
 msgid "FORM_LOGIN_HEADER"
 msgstr "Bejelentkezés"
 
-#: ../../../core/class.auth.php:141
+#: ../../../core/class.auth.php:128
 msgid "PLACEHOLDER_FIRSTNAME"
 msgstr "Keresztnév"
 
-#: ../../../core/class.auth.php:142
+#: ../../../core/class.auth.php:129
 msgid "PLACEHOLDER_LASTNAME"
 msgstr "Vezetéknév"
 
-#: ../../../core/class.auth.php:143 ../../../core/control.overseer.php:126
+#: ../../../core/class.auth.php:130 ../../../core/control.overseer.php:120
 msgid "PLACEHOLDER_EMAIL"
 msgstr "te@tartomany.hu"
 
-#: ../../../core/class.auth.php:146
+#: ../../../core/class.auth.php:133
 msgid "PLACEHOLDER_SELECT_GENDER"
 msgstr "Válassz nemet"
 
-#: ../../../core/class.auth.php:147
+#: ../../../core/class.auth.php:134
 msgid "PLACEHOLDER_DATE_OF_BIRTH"
 msgstr "Születésnap"
 
-#: ../../../core/class.auth.php:150
+#: ../../../core/class.auth.php:137
 msgid "FORM_REGISTER_HEADER"
 msgstr "Regisztráció"
 
-#: ../../../core/class.auth.php:261
+#: ../../../core/class.auth.php:249
 msgid "ERROR_PASSWORDS_DONT_MATCH"
 msgstr "A megadott jelszavak nem egyeznek!"
 
-#: ../../../core/class.auth.php:265
+#: ../../../core/class.auth.php:253
 msgid "ERROR_INVALID_DATA"
 msgstr "Érvénytelen a megadott adat!"
 
-#: ../../../core/class.errorHandler.php:70
+#: ../../../core/class.errorHandler.php:72
 msgid "ERROR_QUERY_FAILED"
 msgstr "Sikertelen lekérdezés"
 
-#: ../../../core/class.errorHandler.php:91
+#: ../../../core/class.errorHandler.php:93
 msgid "ERROR_REQUIRED_IS_NULL"
 msgstr "A szükséges változó NULL értékű"
 
-#: ../../../core/class.errorHandler.php:102
+#: ../../../core/class.errorHandler.php:104
 msgid "ERROR_REQUIRED_NOT_ARRAY"
 msgstr "A szükséges változó nem tömb"
 
-#: ../../../core/class.errorHandler.php:113
+#: ../../../core/class.errorHandler.php:115
 msgid "ERROR_NOT_EXPECTED_VAR_TYPE"
 msgstr "Nem egészen erre a változóra lenne szükség..."
 
-#: ../../../core/class.errorHandler.php:124
+#: ../../../core/class.errorHandler.php:126
 msgid "ERROR_MULTIPLE_QUERY_RESULTS"
 msgstr "Kicsit több az eredmény a vártnál..."
 
-#: ../../../core/class.errorHandler.php:136
+#: ../../../core/class.errorHandler.php:138
 msgid "ERROR"
 msgstr "HIBA"
 
-#: ../../../core/class.errorHandler.php:149
+#: ../../../core/class.errorHandler.php:151
 msgid "SUCCESS"
 msgstr "SIKER"
 
-#: ../../../core/class.form.php:113
+#: ../../../core/class.form.php:116
 msgid "BUTTON_SUBMIT"
 msgstr "Küldés"
 
-#: ../../../core/control.overseer.php:120
+#: ../../../core/class.homeStream.php:85
+msgid "YOU_HAVE_%C%_NEW_MESSAGES"
+msgstr "%C% Új üzeneted van!"
+
+#: ../../../core/class.homeStream.php:106
+msgid "WAITING_FOR_APPROVAL"
+msgstr "személy vár a jóváhagyásodra!"
+
+#: ../../../core/class.messenger.php:95
+msgid "EMAIL_NAME"
+msgstr "Név"
+
+#: ../../../core/class.messenger.php:98 ../../../core/class.messenger.php:237
+msgid "EMAIL_BODY"
+msgstr "Üzenet"
+
+#: ../../../core/class.messenger.php:141
+msgid "INBOX"
+msgstr "Beérkezett"
+
+#: ../../../core/class.messenger.php:145
+msgid "SENT"
+msgstr "Elküldött"
+
+#: ../../../core/class.messenger.php:229
+msgid "MESSAGE_ALL"
+msgstr "Mindenkinek"
+
+#: ../../../core/class.messenger.php:236
+msgid "EMAIL_RECIPIENT"
+msgstr "Címzett"
+
+#: ../../../core/class.messenger.php:240
+msgid "EMAIL_WRITE"
+msgstr "Írás"
+
+#: ../../../core/class.offerFriend.php:101
+#: ../../../core/class.offerFriend.php:115
+#: ../../../core/class.offerFriend.php:357
+#: ../../../core/class.offerFriend.php:371
+msgid "LIST_NAME"
+msgstr "Név"
+
+#: ../../../core/class.offerFriend.php:104
+#: ../../../core/class.offerFriend.php:118
+#: ../../../core/class.offerFriend.php:360
+#: ../../../core/class.offerFriend.php:374
+msgid "LIST_EMAIL"
+msgstr "email"
+
+#: ../../../core/class.offerFriend.php:176
+#: ../../../core/class.offerFriend.php:188
+#: ../../../core/class.offerFriend.php:196
+#: ../../../core/class.offerFriend.php:410
+#: ../../../core/class.offerFriend.php:421
+msgid "FRIEND"
+msgstr "Barát"
+
+#: ../../../core/class.offerFriend.php:181
+#: ../../../core/class.offerFriend.php:192
+#: ../../../core/class.offerFriend.php:200
+#: ../../../core/class.offerFriend.php:415
+#: ../../../core/class.offerFriend.php:425
+msgid "BLOCK"
+msgstr "Tiltás"
+
+#: ../../../core/class.offerFriend.php:265
+msgid "WAITING"
+msgstr "Várakozó"
+
+#: ../../../core/class.offerFriend.php:272
+msgid "FRIENDS"
+msgstr "Barátok"
+
+#: ../../../core/class.offerFriend.php:279
+msgid "BLOCKED"
+msgstr "Tiltva"
+
+#: ../../../core/class.offerFriend.php:288
+msgid "YOU_HAVE_NO_FRIENDS"
+msgstr "Nincsenek barátaid"
+
+#: ../../../core/control.overseer.php:114
 msgid "oSocial"
 msgstr "oSocial"
 
-#: ../../../core/control.overseer.php:121
+#: ../../../core/control.overseer.php:115
 msgid "FALLBACK_META_DESC"
 msgstr "Alapértelmezett meta leírás"
 
-#: ../../../core/control.overseer.php:122
+#: ../../../core/control.overseer.php:116
 msgid "FALLBACK_META_TAGS"
 msgstr "Alapértelmezett meta tagek"
 
-#: ../../../core/control.overseer.php:124
+#: ../../../core/control.overseer.php:118
 msgid "QUICKSEARCH"
 msgstr "GYORSKERESÉS"
 
-#: ../../../core/control.overseer.php:125
+#: ../../../core/control.overseer.php:119
 msgid "TITLE_PLACE_FOR_ADS"
 msgstr "Reklám helye"
 
-#: ../../../core/control.overseer.php:127
+#: ../../../core/control.overseer.php:121
 msgid "TITLE_USER_MENU"
 msgstr "Felhasználói menü"
 

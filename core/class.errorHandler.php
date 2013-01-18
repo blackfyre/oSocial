@@ -3,6 +3,8 @@
  * User: galiczmiklos
  * Date: 2013.01.04.
  * Time: 12:07
+ * @package oSocial
+ * @subpacakage errorHandler
  */
 
 /**

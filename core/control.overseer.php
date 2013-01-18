@@ -14,7 +14,6 @@
  */
 class overseer
 {
-    private $static = null;
     private $auth = null;
     private $error = null;
     private $smarty = null;
@@ -28,6 +27,7 @@ class overseer
     private $friends = null;
     private $connector = null;
     private $home = null;
+    private $messages = null;
 
     function __construct()
     {
@@ -41,13 +41,7 @@ class overseer
 
 
         //szükséges osztályok
-
-        $this->static = new staticElements();
-
-
         $this->error = new errorHandler();
-
-
         $this->core = new coreFunctions();
 
 
@@ -57,27 +51,16 @@ class overseer
             $this->setSiteLang();
         }
 
-
         $this->auth = new auth();
-
-
         $this->menu = new menuHandler();
-
-
         $this->form = new form();
-
-
         $this->admin = new adminPanel();
-
-
         $this->userProfile = new userProfile();
-
         $this->friends = new offerFriend();
         $this->connector = new socialConnector();
         $this->home = new homeStream();
-
-
         $this->var = new varGetter();
+        $this->messages = new messenger();
 
         // A Smarty legyen mindig az utolsó
 
@@ -194,6 +177,11 @@ class overseer
 
             $this->smarty->assign('sideMenu', $this->menu->renderMainMenu());
             $messages = $this->home->renderWaitingMessage();
+
+            if (!isset($_GET['mode'])) {
+                $messages .= $this->home->getGlobalMessages();
+            }
+
             $this->smarty->assign('messages', $messages);
 
             if (isset($_GET['mode'])) {
@@ -262,11 +250,20 @@ class overseer
                 } elseif ($mode == 'users' OR $mode == 'felhasznalok') {
                     $this->smarty->assign('content', $this->friends->renderUserList());
                     $this->smarty->display('pageDefault.tpl');
+                } elseif ($mode == 'uzeneteim' OR $mode == 'messages') {
+
+                    if (isset($_POST['submit-email'])) {
+                        $this->messages->processMessage();
+                    }
+
+                    $this->smarty->assign('content', $this->messages->renderMessages());
+                    $this->smarty->display('pageDefault.tpl');
                 } else {
 
                 }
 
             } else {
+
                 $this->displayDefaultContent();
             }
         } else {

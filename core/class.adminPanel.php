@@ -7,6 +7,9 @@
  *
  * Date: 2013.01.17.
  * Time: 19:04
+ *
+ * @package oSocial
+ * @subpacakage adminPanel
  */
 class adminPanel
 {
@@ -17,22 +20,14 @@ class adminPanel
 
     function __construct()
     {
-        if (is_null($this->db)) {
-            $dbi = database::getInstance();
-            $this->db = $dbi->getConnection();
-        }
 
-        if (is_null($this->core)) {
-            $this->core = new coreFunctions();
-        }
+        $dbi = database::getInstance();
+        $this->db = $dbi->getConnection();
 
-        if (is_null($this->error)) {
-            $this->error = new errorHandler();
-        }
+        $this->core = new coreFunctions();
+        $this->error = new errorHandler();
+        $this->var = new varGetter();
 
-        if (is_null($this->var)) {
-            $this->var = new varGetter();
-        }
     }
 
     /**

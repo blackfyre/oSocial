@@ -3,6 +3,9 @@
  * User: galiczmiklos
  * Date: 2013.01.14.
  * Time: 9:49
+ *
+ * @package oSocial
+ * @subpacakage formHandler
  */
 class form
 {

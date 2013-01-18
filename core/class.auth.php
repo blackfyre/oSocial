@@ -15,30 +15,15 @@ class auth
 
     function __construct()
     {
-        if (is_null($this->db)) {
-            $dbInstance = database::getInstance();
-            $this->db = $dbInstance->getConnection();
-        }
+        $dbInstance = database::getInstance();
+        $this->db = $dbInstance->getConnection();
 
-        if (is_null($this->core)) {
-            $this->core = new coreFunctions();
-        }
+        $this->core = new coreFunctions();
+        $this->error = new errorHandler();
+        $this->form = new form();
+        $this->getter = new varGetter();
+        $this->log = new activityLog();
 
-        if (is_null($this->error)) {
-            $this->error = new errorHandler();
-        }
-
-        if (is_null($this->form)) {
-            $this->form = new form();
-        }
-
-        if (is_null($this->getter)) {
-            $this->getter = new varGetter();
-        }
-
-        if (is_null($this->log)) {
-            $this->log = new activityLog();
-        }
     }
 
     /**

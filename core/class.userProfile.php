@@ -7,6 +7,8 @@
  *
  * Date: 2013.01.17.
  * Time: 18:21
+ * @package oSocial
+ * @subpacakage userProfile
  */
 class userProfile
 {

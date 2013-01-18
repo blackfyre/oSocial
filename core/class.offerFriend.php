@@ -305,6 +305,8 @@ class offerFriend
     {
         $uid = $this->var->getUserID();
 
+        // a sok felhasználó miatt korlátozva lett 40 véletlenszerű megjelenítésre... amúgy sem biztonságos, ha mindenki hozzáfér a teljes adatbázishoz
+
         $query = "
         SELECT *, (
         SELECT state
@@ -314,8 +316,9 @@ class offerFriend
         FROM user_base
         LEFT JOIN user_details ON user_details.uid=user_base.id
         WHERE user_base.id!='$uid'
-        ORDER BY firstName
+        ORDER BY RAND(), firstName
         LIMIT 40
+
         ";
 
 

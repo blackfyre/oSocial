@@ -3,6 +3,9 @@
  * User: galiczmiklos
  * Date: 2013.01.04.
  * Time: 10:53
+ *
+ * @package oSocial
+ * @subpacakage databaseHandler
  */
 class database
 {

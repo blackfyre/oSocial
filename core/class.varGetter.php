@@ -3,6 +3,9 @@
  * User: galiczmiklos
  * Date: 2013.01.16.
  * Time: 16:14
+ *
+ * @package oSocial
+ * @subpacakage varGetter
  */
 class varGetter
 {

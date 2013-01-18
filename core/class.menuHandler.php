@@ -7,6 +7,9 @@
  *
  * Date: 2013.01.15.
  * Time: 21:56
+ *
+ * @package oSocial
+ * @subpacakage menuHandler
  */
 class menuHandler
 {
@@ -18,23 +21,12 @@ class menuHandler
     function __construct()
     {
 
+        $dbInstance = database::getInstance();
+        $this->db = $dbInstance->getConnection();
 
-        if (is_null($this->db)) {
-            $dbInstance = database::getInstance();
-            $this->db = $dbInstance->getConnection();
-        }
-
-        if (is_null($this->core)) {
-            $this->core = new coreFunctions();
-        }
-
-        if (is_null($this->error)) {
-            $this->error = new errorHandler();
-        }
-
-        if (is_null($this->var)) {
-            $this->var = new varGetter();
-        }
+        $this->core = new coreFunctions();
+        $this->error = new errorHandler();
+        $this->var = new varGetter();
     }
 
     private function getMainMenu()
