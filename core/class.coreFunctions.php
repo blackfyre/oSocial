@@ -18,6 +18,7 @@ class coreFunctions
      * Megtisztitja az egyszerű tartalmakat, textArea tisztítására NEM ALKALMAS!
      *
      * @param $variable
+     *
      * @return mixed
      */
     function cleanVar($variable)
@@ -28,7 +29,9 @@ class coreFunctions
 
     /**
      * textArea tisztítására alkalmas változó tisztító metódus
+     *
      * @param $var
+     *
      * @return string
      */
     function cleanTextField($var)
@@ -49,6 +52,7 @@ class coreFunctions
      * @param string $str source string
      * @param int $length
      * @param int $minword
+     *
      * @return string sample string
      */
     public function trimmer($str, $length, $minword = 3)
@@ -77,9 +81,10 @@ class coreFunctions
      *
      * This bit of code creates a slugged version of the input string ($str).
      *
-     * @param string $str Input string
-     * @param array $replace An array of special characters and their replacement
+     * @param string $str       Input string
+     * @param array $replace    An array of special characters and their replacement
      * @param string $delimiter The delimiter to separate the words
+     *
      * @return string The slug version of the input string
      */
     public function slugger($str, $replace = array(), $delimiter = '-')
@@ -100,6 +105,7 @@ class coreFunctions
      * 1000000 -> 1 000 000
      *
      * @param $num
+     *
      * @return mixed
      */
     function prettyNumbers($num)
@@ -113,12 +119,14 @@ class coreFunctions
      * Az útvonalakat tisztítja meg a kellemetlen dupla // jelektől
      *
      * @param $path
+     *
      * @return mixed
      */
     function cleanPath($path)
     {
         $path = $this->cleanVar($path);
         $path = str_replace('//', '/', $path);
+        $path = str_replace(' ', '', $path);
         return $path;
     }
 }
